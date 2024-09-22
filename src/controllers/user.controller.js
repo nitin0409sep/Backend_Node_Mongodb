@@ -6,6 +6,7 @@ import { uploadOnCloudinary } from '../utils/cloudinary.js';
 import jwt from 'jsonwebtoken';
 
 
+// Generate Access And Refresh Token
 const generateAccessAndRefreshToken = async (userId) => {
     try {
 
@@ -281,5 +282,5 @@ const updateUserCoverImage = asynchandler(async (req, res) => {
 })
 
 
-
+// Export Controllers
 export { registerUser, loginUser, logoutUser, refreshAccessToken, changePassword, getCurrentUser, updateUserDetails, updateUserAvatar, updateUserCoverImage };
